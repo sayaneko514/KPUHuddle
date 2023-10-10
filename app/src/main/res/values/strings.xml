@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">KPUHuddle</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string-array name="eventList">
+        <item>Study Group</item>
+        <item>Work Shop</item>
+        <item>Club Gathering</item>
+        <item>Job Fair</item>
+    </string-array>
+</resources>

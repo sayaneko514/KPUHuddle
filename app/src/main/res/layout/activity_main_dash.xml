@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:id="@+id/drawer"
+        tools:openDrawer="start"
+        tools:context=".MainDash">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/main_bg"
+        >
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            >
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_bg"
+                app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+                app:title="KPU Huddle"
+                app:expandedTitleTextAppearance="@style/expandedBarText"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/custom_app_bar_background"
+                    android:paddingHorizontal="20dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_marginTop="70dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Find events happening around KPU right now."
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/dashEventCounter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="event number sample"
+                        android:textColor="#938C8C"
+                        android:textSize="20sp"
+                        />
+                    <androidx.appcompat.widget.SearchView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:height="50dp"
+                        android:background="@drawable/searchbar_field"
+                        android:hint="Search for an event..."
+                        android:textColor="#FFFFFF"
+                        android:paddingLeft="20dp"
+                        android:textStyle="italic"
+                        app:searchIcon="@drawable/ic_baseline_search_24"
+                        android:paddingRight="15dp"
+                        />
+                </LinearLayout>
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/colorPrimary"
+                    >
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dashRCView"
+                />
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navmenu"
+        app:headerLayout="@layout/navheader"
+        app:menu="@menu/navdrawer"
+        android:layout_gravity = "start"
+        />
+</androidx.drawerlayout.widget.DrawerLayout>

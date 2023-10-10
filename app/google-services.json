@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "872627518461",
+    "firebase_url": "https://kpuhuddle-default-rtdb.firebaseio.com",
+    "project_id": "kpuhuddle",
+    "storage_bucket": "kpuhuddle.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872627518461:android:e4c4cb00e6bc8900d4b794",
+        "android_client_info": {
+          "package_name": "com.example.kpuhuddle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "872627518461-jsce7gs9rr3aac06td8kfb3m9cf58fb3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kpuhuddle",
+            "certificate_hash": "b79c4e81bc03e4a343676c9cbf68d669ce8f0956"
+          }
+        },
+        {
+          "client_id": "872627518461-2oav7em5riktnr8ijdpgs6am6i2kc98m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsze-SsWfGL4n04Hbx74MKMipOvQQZLoc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "872627518461-2oav7em5riktnr8ijdpgs6am6i2kc98m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
